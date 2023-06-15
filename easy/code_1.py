@@ -11,14 +11,14 @@ import os
 
 
 # 暴力法解题目
-# class Solution:
-#     def two_sum(self, nums: List[int], target: int) -> List[int]:
-#         result = []
-#         for i in range(0,len(nums)):
-#             for j in range(i+1,len(nums)):
-#                 if nums[i] + nums[j] == target:
-#                     result = [i, j]
-#         return result
+class Solution:
+    def two_sum(self, nums: List[int], target: int) -> List[int]:
+        result = []
+        for i in range(0,len(nums)):
+            for j in range(i+1,len(nums)):
+                if nums[i] + nums[j] == target:
+                    result = [i, j]
+        return result
 
 # 哈希表法（官方解发）
 # class Solution:
@@ -33,17 +33,17 @@ import os
 #         return []
 
 # 哈希表发，自己的笨办法
-class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
-        hash_map = dict()
-        # 将数组元素加入哈希表中
-        for i in range(len(nums)):
-            hash_map[nums[i]] = i
-        for j in range(len(nums)):
-            if target - nums[j] in hash_map:
-                # 判断结果是否为同一个元素,如果不等于则返回
-                if hash_map[target - nums[j]] != j:
-                    return [hash_map[target - nums[j]], j]
+# class Solution:
+#     def twoSum(self, nums: List[int], target: int) -> List[int]:
+#         hash_map = dict()
+#         # 将数组元素加入哈希表中
+#         for i in range(len(nums)):
+#             hash_map[nums[i]] = i
+#         for j in range(len(nums)):
+#             if target - nums[j] in hash_map:
+#                 # 判断结果是否为同一个元素,如果不等于则返回
+#                 if hash_map[target - nums[j]] != j:
+#                     return [hash_map[target - nums[j]], j]
 
 
 if __name__ == '__main__':
