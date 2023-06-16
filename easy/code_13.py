@@ -64,4 +64,4 @@ class Solution:
 if __name__ == '__main__':
     fuirt = Solution()
     kk = fuirt.romanToInt("IV")
-    # print(kk)
+    print(kk)
