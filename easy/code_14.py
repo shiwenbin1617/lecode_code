@@ -5,6 +5,7 @@
 """
 from typing import List
 
+
 # 拿第一个字符串作为前缀去比较，每次比较后删除末尾元素
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
