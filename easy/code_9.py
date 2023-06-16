@@ -26,7 +26,7 @@ class Solution:
         return x == reversed_num or x == reversed_num // 10
 
 
-if __name__ == '__main__':
-    fuirt = Solution()
-    kk = fuirt.isPalindrome(121)
-    print(kk)
+# if __name__ == '__main__':
+#     fuirt = Solution()
+#     kk = fuirt.isPalindrome(121)
+#     print(kk)
